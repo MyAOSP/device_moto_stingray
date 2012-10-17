@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Vzw
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.com.google.clientidbase=android-verizon
+
 PRODUCT_PACKAGES += \
     nc \
     tty2ttyd \
