@@ -86,6 +86,9 @@
         <item>"bnep\\d"</item>
     </string-array>
 
+    <!-- Enable puk unlockscreen -->
+    <bool name="config_enable_puk_unlock_screen">true</bool>
+
     <string-array name="config_usbHostBlacklist">
         <!--  /dev/bus/usb/003 is the external bus. Exclude the others. 
               NOTE: on wingray the external bus is 002, so we override the value

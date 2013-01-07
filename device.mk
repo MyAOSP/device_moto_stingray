@@ -15,6 +15,8 @@
 #
 
 $(call inherit-product, device/moto/wingray/device_base.mk)
+# inherit from the non-open-source side, if present
+$(call inherit-product-if-exists, vendor/moto/stingray/stingray-vendor.mk)
 $(call inherit-product-if-exists, vendor/verizon/device-verizon.mk)
 
 PRODUCT_COPY_FILES += \
