@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, device/moto/wingray/device_base.mk)
+$(call inherit-product-if-exists, vendor/verizon/device-verizon.mk)
 
 PRODUCT_COPY_FILES += \
     device/moto/stingray/oem-iptables-init.sh:system/bin/oem-iptables-init.sh \
@@ -50,10 +51,6 @@ PRODUCT_COPY_FILES += \
     device/moto/stingray/ril/qbpfs:system/bin/qbpfs
 endif
 endif
-
-# Vzw
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.com.google.clientidbase=android-verizon
 
 PRODUCT_PACKAGES += \
     nc \
