@@ -86,9 +86,6 @@
         <item>"bnep\\d"</item>
     </string-array>
 
-    <!-- Enable puk unlockscreen -->
-    <bool name="config_enable_puk_unlock_screen">true</bool>
-
     <string-array name="config_usbHostBlacklist">
         <!--  /dev/bus/usb/003 is the external bus. Exclude the others. 
               NOTE: on wingray the external bus is 002, so we override the value
@@ -97,5 +94,19 @@
         <item>/dev/bus/usb/001</item>
         <item>/dev/bus/usb/002</item>
     </string-array>
+            <!-- Enable Google Network Location Services -->
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+    <!-- The standard AOSP fused location provider -->
+    <item>com.android.location.fused</item>
+    <!-- The Google Network Location Services location provider -->
+    <item>com.google.android.location</item>
+    </string-array>
+
+    <!-- Separate software navigation bar required on this device. -->
+    <bool name="config_showNavigationBar">true</bool>
+
+     <!--  Bring multiuser in for xooms-->
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">8</integer>
 
 </resources>
