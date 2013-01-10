@@ -22,12 +22,16 @@ ril.wrigley.modem.tty=/dev/usb/tty1-1:1.10
 #Leave default mode to 4 (CDMA) but need it to be Global (7) for LTE/CDMA
 ro.telephony.default_network=7
 telephony.lteOnCdmaDevice=1
+DEVICE_PROVISIONED=1
+persist.radio.vzw.cdma.mdn=
+persist.radio.cdma.min=0
 ril.subscription.types=RUIM,NV
 ro.cdma.subscription=0
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
-ro.opengles.version = 131072
+ro.opengles.version=131072
+ro.opengles.surface.rgb565=true
 
 # Indicate carrier OTA SP number schema
 # refer to frameworks/base/telephony/java/com/android/
