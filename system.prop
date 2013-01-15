@@ -26,16 +26,7 @@ telephony.lteOnCdmaDevice=1
 DEVICE_PROVISIONED=1
 persist.radio.vzw.cdma.mdn=
 persist.radio.cdma.min=0
-ril.subscription.types=RUIM,NV
-
-# Google use the system property to control if allow device to be unlock without SIM
-keyguard.no_require_sim=true
-
-# Disable ims by setting imsapp.mode to all_dependency_met
-#imsapp.mode=all_dependency_met
-
-# The value of the kernel command line product_type variable for lte on cdma devices
-telephony.lteOnCdmaProductType=clw
+ril.subscription.types=RUIM
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
@@ -46,7 +37,9 @@ ro.opengles.surface.rgb565=true
 # refer to frameworks/base/telephony/java/com/android/
 # internal/telephony/cdma/CDMAPhone.java for the schema:
 ro.cdma.otaspnumschema=SELC,1,80,99
-ro.cdma.subscription=0
+
+# Google use the system property to control if allow device to be unlock without SIM
+keyguard.no_require_sim=true
 
 # Give extra time for LTE bug dumps
 ril.dumpstate.timeout=75
