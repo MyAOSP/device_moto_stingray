@@ -23,9 +23,6 @@ ril.wrigley.modem.tty=/dev/usb/tty1-1:1.10
 #Leave default mode to 4 (CDMA) but need it to be Global (7) for LTE/CDMA
 ro.telephony.default_network=7
 telephony.lteOnCdmaDevice=1
-DEVICE_PROVISIONED=1
-persist.radio.vzw.cdma.mdn=
-persist.radio.cdma.min=0
 ril.subscription.types=RUIM
 
 # The OpenGL ES API level that is natively supported by this device.
