@@ -21,7 +21,7 @@
 
 # A few more packages that aren't quite used on all builds
 PRODUCT_PACKAGES := \
-        rild 
+    rild
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
